@@ -64,6 +64,7 @@
 
 --6. The stem field wants to find the best qualified student to be head of their club as per marks. List the
 --students name and rollno. (stem is sci and math in this case)
+ SELECT name,rollno FROM Student order by (sci + math)  desc limit 1;
 
 
 --7. The Dept. of stem wants to know the college location of the university that does not provide engineering.
