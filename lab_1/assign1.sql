@@ -72,6 +72,7 @@
 
 --8. What is the ratio of students in the campus that provides stem and does not provide stem (query and show
 --ratio by calc yourself, no need to divide just num/denom)
+SELECT sum(case when engg=1 then cap else 0 end)/sum(case when engg=0 then cap else 0 end) as Engg_NonEngg_ratio   FROM campus;
 
 
 --9. For all rounder find students who have score above 70 in all subj.
