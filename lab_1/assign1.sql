@@ -67,6 +67,7 @@
 
 
 --7. The Dept. of stem wants to know the college location of the university that does not provide engineering.
+     SELECT loc From Campus WHERE engg=0;
 
 
 --8. What is the ratio of students in the campus that provides stem and does not provide stem (query and show
