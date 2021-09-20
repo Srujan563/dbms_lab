@@ -1,14 +1,11 @@
 import mysql.connector
 db = mysql.connector.connect(user="root", passwd='pwd', db="UserDB")
-
 cursor = db.cursor()
-
-
 class Mysqlhandler:
     def __init__(self):
         pass
-    def add_user(self,v1,v2,v3):
-        query="INSERT INTO user_data values('{}',{},'{}')".format(v1,v2,v3)
+    def add_user(self,a1,a2,a3):
+        query="INSERT INTO user_data values('{}',{},'{}')".format(a1,a2,a3)
         cursor.execute(query)
         db.commit()
     def update_user(self,name,dob,pno):
